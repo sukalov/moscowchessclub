@@ -1,0 +1,14 @@
+---
+import { ThemeSwitch } from "astro-color-scheme";
+import { Sun, Moon } from "lucide-astro";
+---
+
+<div>
+  <ThemeSwitch>
+    <button>
+      <span class="sr-only">Toggle Theme</span>
+      <Sun class="absolute dark:text-transparent " />
+      <Moon class="absolute text-transparent dark:text-base "/>
+    </button>
+  </ThemeSwitch>
+</div>
