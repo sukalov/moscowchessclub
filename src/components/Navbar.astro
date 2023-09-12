@@ -1,0 +1,15 @@
+---
+import ModeToggle from "./ModeToggle.astro";
+import { Image } from "astro:assets";
+---
+
+<nav class="fixed top-0 z-20 w-full gap-3 flex h-12 flex-1 px-3 flex-row align-middle items-center border-b border-spacing-10 border-muted backdrop-blur-sm bg-background/0">
+    <a class="rounded border block" href="/">
+        <Image src='/favicon.ico' alt='small chess board' width="32" height="32" class=" border border-mcc-black rounded"/>
+    </a>
+    <a href="/test" class="">
+        test
+    </a>
+    <div class=" flex-grow"></div>
+    <ModeToggle />
+</nav>

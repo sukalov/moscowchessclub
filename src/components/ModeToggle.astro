@@ -2,13 +2,15 @@
 import { ThemeSwitch } from "astro-color-scheme";
 import { Sun, Moon } from "lucide-astro";
 ---
-
 <div>
-  <ThemeSwitch>
-    <button>
-      <span class="sr-only">Toggle Theme</span>
-      <Sun class="absolute dark:text-transparent " />
-      <Moon class="absolute text-transparent dark:text-base "/>
+  <ThemeSwitch strategy="button" defaultTheme="system">
+    <button class=" border border-muted hover:bg-muted transition-colors rounded p-1">
+        <span class="sr-only">Toggle Theme</span>
+        <div class="relative flex text-sm">
+        <Sun class=" dark:text-transparent text-foreground ease-in" />
+        <Moon class=" absolute text-transparent dark:text-foreground ease-in" />
+      </div>
+      </div>
     </button>
   </ThemeSwitch>
 </div>
